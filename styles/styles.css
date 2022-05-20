@@ -244,13 +244,14 @@ body {
 }
 
 /* ABOUT */
+/*About*/
 .about-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
-  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .about-container .right-about {
@@ -275,8 +276,66 @@ body {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   border: 1px solid var(--color-secondary);
-  -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
-          box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+          box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
+
+.about-container .right-about .about-item .abt-text {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-container .right-about .about-item .abt-text .large-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.about-container .right-about .about-item .abt-text .small-text {
+  padding-left: 3rem;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--color-grey-1);
+  letter-spacing: 2px;
+}
+
+.about-container .right-about .about-item .abt-text .small-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--color-grey-5);
+}
+
+.about-container .left-about {
+  padding-right: 3rem;
+}
+
+.about-container .left-about p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--color-grey-1);
+}
+
+.about-container .left-about h4 {
+  font-size: 2rem;
+  padding-left: 1rem;
+  text-transform: uppercase;
 }
 
 /* Independent components */
