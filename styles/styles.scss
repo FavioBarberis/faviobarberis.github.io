@@ -181,9 +181,15 @@ body{
 /*About*/
 .about-container { 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding-top: 3.5rem;
     padding-bottom: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .right-about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -234,6 +240,7 @@ body{
     .left-about {
         padding-right: 3rem;
         p {
+            font-size: 1.5rem;
             line-height: 2rem;
             padding: 1rem;
             color: var(--color-grey-1);
@@ -243,6 +250,19 @@ body{
             padding-left: 1rem;
             text-transform: uppercase;
         }
+    }
+}
+
+.about-stats{
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .stat-title{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
     }
 }
 
